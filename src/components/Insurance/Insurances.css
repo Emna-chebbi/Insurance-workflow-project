@@ -1,0 +1,55 @@
+.plans {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .plan {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+  }
+  
+  .plan--basic {
+    background-color: #e6f7ff;
+  }
+  
+  .plan--standard {
+    background-color: #bae7ff;
+  }
+  
+  .plan--premium {
+    background-color: #85d7ff;
+  }
+  
+  .plan__title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .plan__price {
+    color: #333;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .plan__features {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .plan__feature {
+    margin-bottom: 10px;
+  }
+  
+  .plan__button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    text-transform: uppercase;
+  }
