@@ -13,7 +13,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
   const [fullName, setFullName] = useState("");
   const [address, setAddress] = useState("");
   const [townCity, setTownCity] = useState("");
-  const [paymentInfo, setPaymentInfo] = useState("OTest Gateway");
+  const [paymentInfo, setPaymentInfo] = useState("Test Gateway");
   const [creditCardNumber, setCreditCardNumber] = useState("");
   const [expirationDate, setExpirationDate] = useState("");
   const [email, setEmail] = useState("");
@@ -23,8 +23,6 @@ const CustomerInfoForm = ({ handlePurchase }) => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-    // Assuming you have a function to handle purchase
-    // Pass form data to this function
     handlePurchase({
       fullName,
       address,
@@ -64,7 +62,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="townCity">Town/City:</label>
+        <label htmlFor="townCity">City:</label>
         <input
           type="text"
           id="townCity"
@@ -83,8 +81,8 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           onChange={(e) => setPaymentInfo(e.target.value)}
           required
         >
-          <option value="OTest Gateway">OTest Gateway</option>
-          <option value="OCredit Card">OCredit Card</option>
+          <option value="OTest Gateway">Test Gateway</option>
+          <option value="OCredit Card">Credit Card</option>
         </select>
       </div>
       <div className="form-group">
@@ -145,7 +143,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="zipPostal">Zip/Postal:</label>
+        <label htmlFor="zipPostal">Zip:</label>
         <input
           type="text"
           id="zipPostal"
