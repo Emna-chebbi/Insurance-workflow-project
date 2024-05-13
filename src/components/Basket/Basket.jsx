@@ -127,7 +127,6 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           name="billingZip"
           value={billingZip}
           onChange={(e) => setBillingZip(e.target.value)}
-          placeholder="Enter Billing Zip Code"
           required
         />
       </div>

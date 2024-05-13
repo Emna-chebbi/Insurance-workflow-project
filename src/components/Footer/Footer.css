@@ -46,12 +46,12 @@
 }
 
 .footer_last {
-    width: 40%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    padding-top: 20px;
-    gap: 25px;
+    padding-top: 10px;
+    gap: 40px;
 }
 
 .footer_last span {
@@ -66,9 +66,9 @@
 .footer_link_box {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .footer_last a {
@@ -120,6 +120,7 @@
    
     .footer_last {
         width: 100%;
+        align-items: center;
     }
 
    

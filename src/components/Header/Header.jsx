@@ -35,7 +35,10 @@ function Header() {
           Claims
         </Link>
         <Link to={"/"} className="logo">
-           Sales shop 
+          Insurances
+        </Link>
+        <Link to={"/"} className="logo">
+          Sales shop 
         </Link>
         <div className="search_header">{pathname === "/" && <SearchBar />}</div>
         <div className="icon_Sopping_box">
