@@ -28,6 +28,12 @@ export default function Filter() {
         >
           Graid
         </button>
+        <button
+          onClick={() => dispath({ type: "Insurances" })}
+          className="filter_btn"
+        >
+          Insurances
+        </button>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@ import Details from './components/Details/Details';
 import FavoritePage from './components/Favorite/FavoritePage';
 import Header from './components/Header/Header';
 import Products from './components/Products/Products';
-import Insurances from './components/Insurances/Insurances';
+
 
 function App() {
   let router = useRoutes([
@@ -20,8 +20,6 @@ function App() {
     <ContextProvider>
       <ContextFilter>
         <Header />
-        <Products />
-        <Insurances /> 
         {router}
       </ContextFilter>
     </ContextProvider>

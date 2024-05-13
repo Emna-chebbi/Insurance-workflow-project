@@ -8,12 +8,11 @@ import Offer from "./Offer";
 import OfferBadge from "./OfferBadge";
 import SendProducts from "./SendProducts";
 
-// Modified CustomerInfoForm component
 const CustomerInfoForm = ({ handlePurchase }) => {
   const [fullName, setFullName] = useState("");
   const [address, setAddress] = useState("");
   const [townCity, setTownCity] = useState("");
-  const [paymentInfo, setPaymentInfo] = useState("Test Gateway");
+  const [paymentInfo, setPaymentInfo] = useState("Credit Card");
   const [creditCardNumber, setCreditCardNumber] = useState("");
   const [expirationDate, setExpirationDate] = useState("");
   const [email, setEmail] = useState("");
@@ -81,9 +80,9 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           onChange={(e) => setPaymentInfo(e.target.value)}
           required
         >
+          <option value="Master Card">Master Card</option>
           <option value="Visa Card">Visa Card</option>
           <option value="Credit Card">Credit Card</option>
-          <option value="Master Card">Master Card</option>
         </select>
       </div>
       <div className="form-group">
@@ -128,6 +127,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           name="billingZip"
           value={billingZip}
           onChange={(e) => setBillingZip(e.target.value)}
+          placeholder="Enter Billing Zip Code"
           required
         />
       </div>
@@ -153,7 +153,6 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           required
         />
       </div>
-      
       <button type="submit">Checkout</button>
     </form>
   );
