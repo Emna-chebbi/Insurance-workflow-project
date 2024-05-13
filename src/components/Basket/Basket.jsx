@@ -40,7 +40,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
   return (
     <form className="customer_info_form" onSubmit={handleFormSubmit}>
       <div className="form-group">
-        <label htmlFor="fullName">Full Name:</label>
+        <label htmlFor="fullName">Full Name</label>
         <input
           type="text"
           id="fullName"
@@ -51,7 +51,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="address">Address:</label>
+        <label htmlFor="address">Address</label>
         <input
           type="text"
           id="address"
@@ -62,7 +62,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="townCity">City:</label>
+        <label htmlFor="townCity">City</label>
         <input
           type="text"
           id="townCity"
@@ -73,7 +73,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="paymentInfo">Payment Info:</label>
+        <label htmlFor="paymentInfo">Payment Info</label>
         <select
           id="paymentInfo"
           name="paymentInfo"
@@ -81,12 +81,13 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           onChange={(e) => setPaymentInfo(e.target.value)}
           required
         >
-          <option value="OTest Gateway">Test Gateway</option>
-          <option value="OCredit Card">Credit Card</option>
+          <option value="Visa Card">Visa Card</option>
+          <option value="Credit Card">Credit Card</option>
+          <option value="Master Card">Master Card</option>
         </select>
       </div>
       <div className="form-group">
-        <label htmlFor="creditCardNumber">Credit Card Number:</label>
+        <label htmlFor="creditCardNumber">Credit Card Number</label>
         <input
           type="text"
           id="creditCardNumber"
@@ -97,7 +98,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="expirationDate">Expiration Date:</label>
+        <label htmlFor="expirationDate">Expiration Date</label>
         <input
           type="text"
           id="expirationDate"
@@ -109,7 +110,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">Email</label>
         <input
           type="email"
           id="email"
@@ -120,19 +121,18 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="billingZip">Billing Zip:</label>
+        <label htmlFor="billingZip">Billing Zip</label>
         <input
           type="text"
           id="billingZip"
           name="billingZip"
           value={billingZip}
           onChange={(e) => setBillingZip(e.target.value)}
-          placeholder="Enter Billing Zip Code"
           required
         />
       </div>
       <div className="form-group">
-        <label htmlFor="cvc">CVC:</label>
+        <label htmlFor="cvc">CVC</label>
         <input
           type="text"
           id="cvc"
@@ -143,7 +143,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <div className="form-group">
-        <label htmlFor="zipPostal">Zip:</label>
+        <label htmlFor="zipPostal">Zip</label>
         <input
           type="text"
           id="zipPostal"
@@ -153,6 +153,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           required
         />
       </div>
+      
       <button type="submit">Checkout</button>
     </form>
   );

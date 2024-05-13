@@ -14,9 +14,12 @@ export default function Footer() {
       </span>
       <div className="footer_last">
         <div className="footer_link_box">
-          <Link to={"/basket"}> Shopping cart</Link>
-          <Link to={"/favorite"}>Favorites</Link>
-       {/*   <Link to={"/Register"}>Registration</Link> */}
+
+          <Link to={"/favorite"}>My profile</Link>
+          <Link to={"/favorite"}>Insurances</Link>
+          <Link to={"/favorite"}>Claims</Link>
+          <Link to={"/"}>Sales Shop</Link>
+      
         </div>
       </div>
     </footer>

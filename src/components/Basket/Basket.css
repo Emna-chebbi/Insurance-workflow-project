@@ -84,7 +84,7 @@
 
 .basket_priceBox {
   width: 100%;
-  max-height: 680px;
+  max-height: 1300px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.08) 0px 5px 20px;
@@ -304,37 +304,42 @@
 
 .customer_info_form {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
   margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
 }
 
 .customer_info_form .form-row {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .customer_info_form .form-group {
   flex: 1;
-  margin-right: 10px;
+  margin-right: 40px;
 }
 
 .customer_info_form label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
+  padding-left: 60px;
+  
+ 
 }
 
 .customer_info_form input,
 .customer_info_form select {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  border-radius: 10px;
+  font-size: 12px;
+  
 }
 
 .customer_info_form select {
@@ -342,21 +347,25 @@
   background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
   background-repeat: no-repeat;
   background-position: right 10px top 50%;
-  background-size: 20px;
+  background-size: 30px;
+  
 }
 
 .customer_info_form button {
   width: 100%;
   padding: 10px;
   background-color: #1f77b5;
+  align-items: center;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 20px;
   transition: background-color 0.3s;
 }
 
 .customer_info_form button:hover {
   background-color: #135e96;
+
 }
