@@ -34,7 +34,7 @@ function Header() {
         <Link to={"/"} className="logo">
           Claims
         </Link>
-        <Link to={"/"} className="logo">
+        <Link to={"/Insurance"} className="logo">
           Insurances
         </Link>
         <Link to={"/"} className="logo">

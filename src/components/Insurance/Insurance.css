@@ -1,55 +1,143 @@
+.plans-container {
+  display: flex;
+  border-color: #007bff;
+  justify-content:space-evenly;
+  padding: 100px;
+  background-image: url(../../../public/images/gray.jpg);
+ 
+}
+
+
+
 .plans {
-    display: flex;
-    justify-content: space-around;
-  }
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 700px;
+}
+
+.plan {
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-between;
+}
+
+.plan h2 {
+  color: rgb(241, 112, 112);
+  padding: 10px;
+  font-style: oblique;
+  text-transform: uppercase ;
+  font-weight: bolder;
+  margin-right: 10px;
+}
+
+.plan ul {
+  list-style-type:circle;
+  font-weight: 600;
+  margin: 0;
   
-  .plan {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 20px;
-    text-align: center;
-    width: 30%;
-  }
-  
-  .plan--basic {
-    background-color: #e6f7ff;
-  }
-  
-  .plan--standard {
-    background-color: #bae7ff;
-  }
-  
-  .plan--premium {
-    background-color: #85d7ff;
-  }
-  
-  .plan__title {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .plan__price {
-    color: #333;
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .plan__features {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .plan__feature {
-    margin-bottom: 10px;
-  }
-  
-  .plan__button {
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    color: #fff;
-    padding: 10px 20px;
-    text-transform: uppercase;
-  }
+}
+
+.plan--standard {
+  background-color: #0fa3f3;
+}
+
+.plan--premium {
+  background-color: #229cec;
+}
+
+.plan__title {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.plan__price {
+  color: #3c0000;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.plan__features {
+  list-style:disc;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.plan__feature {
+  margin-bottom: 10px;
+  list-style:disc;
+  text-align: left;
+}
+
+.plan__button {
+  background-color: #4c9ef5;
+  border: none;
+  border-radius: 5px;
+  color: #cbc0c0;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto; 
+  margin-top: 2rem;
+  border: 1px solid #c8bc81;
+  border-radius: 5px;
+  padding: 2rem;
+  background-color: #f0e5c1;
+}
+
+.form__row {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.form__row #theftProtection {
+  align-items: right;
+}
+
+.form label {
+  width: 120px;
+  margin-right: 10px; 
+  font-weight: 500;
+  text-align: center;
+}
+
+.form input,
+.form textarea,
+.form select {
+  padding: 0.5rem;
+  border: 1px solid #00e458;
+  border-radius: 5px;
+  text-align:left;
+  flex: 1; 
+}
+
+.form input[type="checkbox"] {
+  margin-left: 1rem;
+}
+
+.form button {
+  background-color: #5ece6f;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #007bff;
+}
+
+

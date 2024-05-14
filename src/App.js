@@ -6,6 +6,7 @@ import Details from './components/Details/Details';
 import FavoritePage from './components/Favorite/FavoritePage';
 import Header from './components/Header/Header';
 import Products from './components/Products/Products';
+import Insurance from './components/Insurance/Insurance';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     { path: '/:id', element: <Details /> },
     { path: '/favorite', element: <FavoritePage /> },
     { path: '/basket', element: <Basket /> },
+    { path: '/insurance', element: <Insurance /> },
     { path: '*', element: <Navigate to={'/'} /> },
   ])
   return (

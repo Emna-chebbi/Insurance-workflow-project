@@ -19,6 +19,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
   const [billingZip, setBillingZip] = useState("");
   const [cvc, setCvc] = useState("");
   const [zipPostal, setZipPostal] = useState("");
+  
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -33,6 +34,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
       billingZip,
       cvc,
       zipPostal,
+      
     });
   };
 
@@ -153,6 +155,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         />
       </div>
       <button type="submit">Checkout</button>
+    
     </form>
   );
 };

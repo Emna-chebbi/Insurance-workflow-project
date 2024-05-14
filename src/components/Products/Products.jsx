@@ -31,7 +31,7 @@ export default function Products() {
               alt=""
             />
             <span className="products_empty_title">
-            Sorry, no products match your search!
+            Sorry, no products match your search
             </span>
             <span className="products_empty_guide">
             Search  
