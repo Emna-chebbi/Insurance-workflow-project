@@ -10,12 +10,12 @@ export default function SendProducts() {
       <div className="send_info_price">
         <span>Shipping cost</span>
         <span>
-          {state.totalPrice - state.offerPrice <= 100_000
+          {state.totalPrice - state.offerPrice <= 10_000_000
             ? `${sendPrice.toLocaleString()} TND`
             : "Free"}
         </span>
       </div>
-      {state.totalPrice - state.offerPrice > 100_000 && (
+      {state.totalPrice - state.offerPrice > 10_000_000 && (
         <div className="send_free_img">
           <img src="images/free.svg" alt="free" />
         </div>

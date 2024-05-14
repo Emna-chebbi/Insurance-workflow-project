@@ -1,5 +1,6 @@
 import React from 'react';
 import './Claims.css';
+import Footer from "../Footer/Footer";
 
 function Form() {
   return (
@@ -18,6 +19,7 @@ function Form() {
         </div>
         <button className="claim-submit">Submit</button>
       </form>
+      <Footer />
     </div>
   );
 }
