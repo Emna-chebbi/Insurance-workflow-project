@@ -31,7 +31,7 @@ function Header() {
         <Link to={"/"} className="logo">
           My Profile
         </Link>
-        <Link to={"/"} className="logo">
+        <Link to={"/Claims"} className="logo">
           Claims
         </Link>
         <Link to={"/Insurance"} className="logo">

@@ -1,0 +1,100 @@
+body {
+  background-image: url(../../../public/images/inc.jpg);
+}
+
+.claim-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 550px;
+  background: #fff5f5;
+  padding: 50px 100px;
+  margin: 150px auto 100px auto; /* Centering the form horizontally */
+  border-radius: 20px;
+}
+
+.claim-title {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: bolder;
+  letter-spacing: -0.025em;
+  color: #DD761C;
+  text-align: center; 
+  margin: 30px;
+}
+
+
+.claim-signin {
+  text-align: center;
+}
+
+.claim-signin a {
+  color: #FFBFBF;
+}
+
+.claim-signin a:hover {
+  text-decoration: underline #FFBFBF;
+}
+
+.claim-flex {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.claim-form label {
+  position: relative;
+}
+
+.claim-form label .input {
+  width: 100%;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid rgba(105, 105, 105, 0.397);
+  border-radius: 10px;
+  text-align: left;
+}
+
+.claim-form label .input + span {
+  position: relative;
+  right: 100px;
+  top: -15px; 
+  color: grey;
+  font-size: 0.9em;
+  cursor: text;
+  transition: 0.3s ease;
+}
+
+.claim-form label .input:placeholder-shown + span {
+  top: -15px; 
+  font-size: 0.9em;
+}
+
+.claim-form label .input:focus + span,
+.claim-form label .input:valid + span {
+  top: -65px; 
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.claim-form label .input:valid + span {
+  color: #FEB941;
+  font-size: medium;
+  font-weight: bold;
+}
+
+.claim-submit {
+  border: none;
+  outline: none;
+  background-color: #98e076;
+  padding: 10px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 16px;
+  transform: .3s ease;
+}
+
+.claim-submit:hover {
+  background-color: #fd9494;
+}
+

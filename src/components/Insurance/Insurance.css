@@ -1,9 +1,14 @@
 .plans-container {
   display: flex;
-  border-color: #007bff;
-  justify-content:space-evenly;
-  padding: 100px;
-  background-image: url(../../../public/images/gray.jpg);
+  flex-direction: column;
+  gap: 10px;
+  max-width: 900px;
+  background: #fff5f5;
+  padding: 40px;
+  margin-top: 150px;
+  margin-right : 150px;
+  border-radius: 10px;
+  position: relative;
  
 }
 
@@ -28,7 +33,7 @@
 }
 
 .plan h2 {
-  color: rgb(241, 112, 112);
+  color: #DD761C;
   padding: 10px;
   font-style: oblique;
   text-transform: uppercase ;
@@ -89,10 +94,10 @@
   width: 80%;
   margin: 0 auto; 
   margin-top: 2rem;
-  border: 1px solid #c8bc81;
+  border: 1px solid #A8DF8E;
   border-radius: 5px;
   padding: 2rem;
-  background-color: #f0e5c1;
+  background-color: #A8DF8E;
 }
 
 .form__row {
@@ -127,7 +132,7 @@
 }
 
 .form button {
-  background-color: #5ece6f;
+  background-color: #6DC5D1;
   border: none;
   border-radius: 5px;
   color: #fff;

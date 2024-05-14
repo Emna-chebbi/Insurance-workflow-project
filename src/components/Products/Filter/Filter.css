@@ -37,7 +37,7 @@
     line-height: 35px;
     display: block;
     border-radius: 25px;
-    background-color: #1f77b5;
+    background-color: #ffdc7b;
     border: none;
     outline: none;
     color: #fff;
@@ -48,5 +48,5 @@
 }
 
 .filter_btn:hover {
-    background-color: #085e9b;
+    background-color: #DD761C;
 }

@@ -146,7 +146,7 @@
 }
 
 .basket_button_buy {
-  background-color: #1f77b5;
+  background-color: #FFBFBF;
   margin-top: 35px;
 }
 
@@ -348,5 +348,5 @@
 }
 
 .customer_info_form button:hover {
-  background-color: #135e96;
+  background-color: #FFBFBF;
 }

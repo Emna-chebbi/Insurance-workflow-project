@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import "./Insurance.css";
-import { Link } from "react-router-dom";
+import Footer from "../Footer/Footer";
 
 const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
   const [showPaymentForm, setShowPaymentForm] = useState(false); 
@@ -9,15 +9,10 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
   const [pricePerDay, setPricePerDay] = useState('');
   const [startDate, setStartDate] = useState('');
   const [endDate, setEndDate] = useState('');
-  const [theftProtection, setTheftProtection] = useState(false);
   const [termsOfContract, setTermsOfContract] = useState('');
   const [firstName, setFirstName] = useState('');
   const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
-
-  const handleTheftProtectionChange = () => {
-    setTheftProtection(!theftProtection);
-  };
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -29,7 +24,6 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
     setPricePerDay('');
     setStartDate('');
     setEndDate('');
-    setTheftProtection(false);
     setTermsOfContract('');
     setFirstName('');
     setLastName('');
@@ -58,7 +52,7 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
         <form className="form" onSubmit={handleBuyNow}>
           {/* Payment form fields */}
           <div className="form__row">
-            <label htmlFor="cardNumber">Credit Card Number</label>
+            <label htmlFor="cardNumber">Card Number</label>
             <input id="cardNumber" type="text" required/>
           </div>
           <div className="form__row">
@@ -67,7 +61,7 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
           </div>
           <div className="form__row">
             <label htmlFor="cvc">CVC</label>
-            <input id="cvc" type="text" required/>
+            <input id="cvc" type="text" placeholder='...' required/>
           </div>
           <button className="form-submit-button">Confirm Purchase</button>
         </form>
@@ -114,14 +108,17 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
 };
 
 const App = () => (
-  <div className="plans-container">
-    <div className="plan">
-      <InsurancePlan 
-        plan="Plan" 
-        standardFeatures={['Price:50-150', 'Regular Support', 'Monthly period of time', 'Only Minor damages']} 
-        premiumFeatures={['Price:200-500', 'Priority Support', 'Yearly period of time','Includes all gadget damages']} 
-      />
+  <div>
+    <div className="plans-container">
+      <div className="plan">
+        <InsurancePlan 
+          plan="Plan" 
+          standardFeatures={['Price:50-150', 'Regular Support', 'Monthly period of time', 'Only Minor damages']} 
+          premiumFeatures={['Price:200-500', 'Priority Support', 'Yearly period of time','Includes all gadget damages']} 
+        />
+      </div>
     </div>
+    <Footer />
   </div>
 );
 

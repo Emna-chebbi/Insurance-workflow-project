@@ -88,7 +88,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
         </select>
       </div>
       <div className="form-group">
-        <label htmlFor="creditCardNumber">Credit Card Number</label>
+        <label htmlFor="creditCardNumber">Card Number</label>
         <input
           type="text"
           id="creditCardNumber"
