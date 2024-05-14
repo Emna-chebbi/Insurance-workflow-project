@@ -14,9 +14,9 @@ export default function Footer() {
       </span>
       <div className="footer_last">
         <div className="footer_link_box">
-          <Link to={"/favorite"}> My Profile</Link>
-          <Link to={"/Insurance"}> Insurances</Link>
+          <Link to={"/"}> My Profile</Link>
           <Link to={"/Claims"}>Claims</Link>
+          <Link to={"/Insurance"}> Insurances</Link>
           <Link to={"/"}>Sales Shop</Link>
        
         </div>

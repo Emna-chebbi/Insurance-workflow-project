@@ -73,7 +73,10 @@
 
 .footer_last a {
     transition: all .2s ease;
-    color: #eee;
+    color: #ffffff;
+    margin-right: 10px;
+    font-weight: 500;
+    font-size: large;
 }
 
 .footer_last a:hover {
