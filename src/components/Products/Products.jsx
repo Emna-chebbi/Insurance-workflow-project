@@ -20,7 +20,7 @@ export default function Products() {
           <SearchBar />
         </div>
       </div>
-      <div className="product_container">
+      <div className="product_container" dir="ltr">
         {productsList.length > 0 ? (
           productsList.map((product) => <Card key={product.id} {...product} />)
         ) : (

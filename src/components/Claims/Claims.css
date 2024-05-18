@@ -3,6 +3,7 @@ body {
 }
 
 .claim-form {
+  direction: ltr;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -57,7 +58,6 @@ body {
 
 .claim-form label .input + span {
   position: relative;
-  right: 100px;
   top: -15px; 
   color: grey;
   font-size: 0.9em;

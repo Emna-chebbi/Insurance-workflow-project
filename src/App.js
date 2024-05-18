@@ -8,6 +8,7 @@ import Header from './components/Header/Header';
 import Products from './components/Products/Products';
 import Insurance from './components/Insurance/Insurance';
 import Claims from './components/Claims/Claims';
+import Contact from './components/Contact/Contact';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
     { path: '/basket', element: <Basket /> },
     { path: '/insurance', element: <Insurance /> },
     { path: '/claims', element: <Claims /> },
+    { path: '/contact', element: <Contact /> },
     { path: '*', element: <Navigate to={'/'} /> },
   ])
   return (

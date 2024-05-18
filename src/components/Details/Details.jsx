@@ -14,7 +14,7 @@ export default function Details() {
   const checkBasket = state.basket.some((product) => product.id == params.id);
 
   return (
-    <div className="details_container">
+    <div className="details_container" dir="ltr">
       <div className="details_linkBar">
         <span onClick={() => navigate(-1)} className="details_backLink">
           <HiArrowRight />
@@ -32,7 +32,7 @@ export default function Details() {
             <span className="card_title">{datas.title}</span>
             <span style={{ color: "#8fc700" }}>|</span>
             <span className="card_price">
-             TND {datas.price.toLocaleString()} 
+             {datas.price.toLocaleString()}TND
             </span>
           </div>
           <div className="card_information">

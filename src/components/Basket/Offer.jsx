@@ -19,8 +19,8 @@ function Offer() {
   };
 
   return (
-    <div className="offer_container">
-      <span>Got discount code</span>
+    <div className="offer_container" dir="ltr">
+      <span>Do you have a discount code ?</span>
       <div className="offer_box">
         <input
           value={offerInput}

@@ -5,7 +5,7 @@ import Footer from "../Footer/Footer";
 function Form() {
   return (
     <div>
-      <form className="claim-form">
+      <form className="claim-form" dir='ltr' >
         <p className="claim-title">Write up a claim</p>
         <div className="flex">
           <label>

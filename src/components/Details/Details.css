@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  direction: ltr;
 }
 
 .details_linkBar {
@@ -16,7 +17,7 @@
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 20px;
   padding: 15px 25px;
-  border-right: 5px solid #1f77b5;
+  border-left: 5px solid #1f77b5;
 }
 
 .details_backLink {
@@ -30,7 +31,7 @@
 
 .details_backLink:hover {
   color: #4c9dd7;
-  padding-right: 5px;
+  padding-left: 5px;
 }
 
 .datails_card {
@@ -39,7 +40,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20zpx;
-  border-left: 5px solid #1f77b5;
+  border-left: 5px solid #f56481;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -59,7 +60,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 5px 20px;
-  border-right: 5px solid #1f77b5;
+  border-left: 5px solid #f5e966;
   padding: 15px;
   position: relative;
 }
@@ -84,8 +85,8 @@
 
 .card_category {
   color: rgba(0, 0, 0, 0.5);
-  border-right: 3px solid #1f77b5;
-  padding-right: 5px;
+  border-left: 3px solid #1f77b5;
+  padding-left: 5px;
 }
 
 .card_title,
@@ -118,7 +119,7 @@
   line-height: 35px;
   display: block;
   border-radius: 5px;
-  background-color: #1f77b5;
+  background-color: #96e174;
   border: none;
   outline: none;
   color: #fff;
@@ -128,7 +129,7 @@
 }
 
 .card_buy:hover {
-  background-color: #4695ce;
+  background-color: #6DC5D1;
 }
 
 @media screen and (min-width: 670px) {

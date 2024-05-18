@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 
 export default function BasketItem(props) {
   return (
-    <div className="basket_item">
+    <div className="basket_item" dir="ltr">
       <Link className="basket_link" to={`/${props.id}`}>
         <div className="basket_img">
           <img src={props.image} alt="basket_item" />
         </div>
         <div className="basket_content">
           <span className="basket_title">{props.title}</span>
-          <span>{(props.price * props.count).toLocaleString()} TND</span>
+          <span> {(props.price * props.count).toLocaleString()} TND</span>
         </div>
       </Link>
       <div className="basket_counter">

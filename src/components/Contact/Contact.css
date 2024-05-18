@@ -1,0 +1,122 @@
+body {
+    background-image: url(../../../public/images/inc.jpg);
+  }
+  
+  .contact-page {
+    display: flex;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin-top: 70px;
+    padding: 50px;
+
+  }
+  
+
+  .contact-page-about p{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+
+  .contact-page-left,
+  .contact-page-right {
+    width: 47%; 
+  }
+  
+  .contact-page-header,
+  .contact-page-about,
+  .contact-page-info,
+  .contact-page-thankyou,
+  .contact-page-review-form,
+  .contact-page-donate {
+    margin-bottom: 20px;
+  }
+  
+  .contact-page-header {
+    color: #DD761C;
+    margin-top: 150px;
+    font-size: 40px;
+  }
+  
+  .contact-page h1 {
+    font-family: Georgia, Times, 'Times New Roman', 'serif';
+  }
+  
+  .contact-page-box {
+    background-color: rgb(250, 250, 250);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .contact-page-info h2,
+  .contact-page-review-form h2,
+  .contact-page-donate h2 {
+    color: #A8DF8E;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  
+  .contact-page-info p,
+  .contact-page-donate p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .contact-page-donate a {
+    color: #007BFF;
+    text-decoration: none;
+  }
+  
+  .contact-page-donate a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-page-form-group {
+    margin-bottom: 20px;
+  }
+  
+  .contact-page-form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .contact-page-form-group input,
+  .contact-page-form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .contact-page-form-group textarea {
+    height: 100px;
+  }
+  
+  .contact-page-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #50ccdc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .contact-page-button:hover {
+    background-color: #68de48;
+  }
+  
+  .contact-page-thankyou {
+    text-align: center;
+    color: #ED7B7B;
+  }
+  

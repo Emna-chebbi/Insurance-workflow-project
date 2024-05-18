@@ -5,7 +5,7 @@ import "./Filter.css";
 export default function Filter() {
   const { dispath } = useContext(FilterDispath);
   return (
-    <div className="filter_container">
+    <div className="filter_container" dir="ltr">
       <div className="filter_btnBox">
         <button onClick={() => dispath({ type: "ALL" })} className="filter_btn">
           All

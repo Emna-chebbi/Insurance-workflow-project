@@ -9,11 +9,10 @@ import SearchBar from "../SearchBar/SearchBar";
 function Header() {
   const { state } = useContext(ProductContext);
   const { dispath } = useContext(ProductDispath);
-  // Get location for hide & show SearchBar Component
   const location = useLocation();
   const { pathname } = location;
 
-  // run only if state changes and Not Mount
+
   const didMount = useRef(false);
   useEffect(() => {
     if (didMount.current) {
@@ -26,20 +25,25 @@ function Header() {
   }, [dispath, state.favorites]);
 
   return (
-    <header className="header">
+    <header className="header" dir="ltr">
       <nav className="nav">
         <Link to={"/"} className="logo">
           My Profile
         </Link>
-        <Link to={"/Claims"} className="logo">
-          Claims
+        <Link to={"/"} className="logo">
+          Sales shop 
         </Link>
         <Link to={"/Insurance"} className="logo">
           Insurances
         </Link>
-        <Link to={"/"} className="logo">
-          Sales shop 
+        <Link to={"/Claims"} className="logo">
+          Claims
         </Link>
+        <Link to={"/Contact"} className="logo">
+          Contact
+        </Link>
+        
+    
         <div className="search_header">{pathname === "/" && <SearchBar />}</div>
         <div className="icon_Sopping_box">
           <Link to={"/basket"} className="shoppe_icon_box">

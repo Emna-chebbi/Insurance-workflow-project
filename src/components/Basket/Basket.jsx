@@ -73,7 +73,7 @@ const CustomerInfoForm = ({ handlePurchase }) => {
           required
         />
       </div>
-      <div className="form-group">
+      <div className="form-group" dir="ltr">
         <label htmlFor="paymentInfo">Payment Info</label>
         <select
           id="paymentInfo"
@@ -194,7 +194,7 @@ export default function Basket() {
         )}
       </div>
       {state.basket.length > 0 ? (
-        <div className="basket_container">
+        <div className="basket_container" dir="ltr">
           <div className="basket_itemBox">
             {state.basket.map((product) => (
               <BasketItem key={product.id} {...product} />
@@ -209,7 +209,7 @@ export default function Basket() {
             </div>
             {state.totalPriceAfterOffer > 0 && (
               <div className="basket_offer">
-                <span>discounted price</span>
+                <span>Discounted price</span>
                 <span>{state.totalPriceAfterOffer.toLocaleString()} TND</span>
               </div>
             )}

@@ -10,7 +10,6 @@ export default function SearchBar() {
 
   const location = useLocation();
   const { pathname } = location;
-  // change The route search input is empty
   useEffect(() => {
     dispath({ type: "SEARCH_KEYWORD", payload: "" });
   }, [pathname]);
@@ -19,11 +18,11 @@ export default function SearchBar() {
     dispath({ type: "SEARCH_KEYWORD", payload: e.target.value });
   };
   return (
-    <div className="searchBar_box">
+    <div className="searchBar_box" dir="ltr">
       <input
         onChange={(e) => searchKeywordHandler(e)}
         type="text"
-        placeholder="Search  ..."
+        placeholder="   Search..."
         value={state.searchKey}
       />
       <span>

@@ -28,14 +28,13 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
     setFirstName('');
     setLastName('');
     setEmail('');
-    // Alert message
     alert("Thank you for your purchase");
-    // Restart the page
+ 
     window.location.reload();
   };
 
   return (
-    <div className={`--${plan}`}>
+    <div className={`--${plan}`} dir='ltr'>
       <h2>{plan} Standard</h2>
       <ul>
         {standardFeatures.map((feature, index) => (
@@ -48,9 +47,9 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
           <li key={index}>{feature}</li>
         ))}
       </ul>
-      {showPaymentForm ? ( // Render the payment form if showPaymentForm is true
+      {showPaymentForm ? ( 
         <form className="form" onSubmit={handleBuyNow}>
-          {/* Payment form fields */}
+        
           <div className="form__row">
             <label htmlFor="cardNumber">Card Number</label>
             <input id="cardNumber" type="text" required/>
@@ -109,7 +108,7 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
 
 const App = () => (
   <div>
-    <div className="plans-container">
+    <div className="plans-container" dir='ltr'>
       <div className="plan">
         <InsurancePlan 
           plan="Plan" 

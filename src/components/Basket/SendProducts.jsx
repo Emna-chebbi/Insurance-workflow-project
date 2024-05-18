@@ -6,7 +6,7 @@ export default function SendProducts() {
   const { state } = useContext(ProductContext);
 
   return (
-    <div className="send_products">
+    <div className="send_products" dir="ltr">
       <div className="send_info_price">
         <span>Shipping cost</span>
         <span>

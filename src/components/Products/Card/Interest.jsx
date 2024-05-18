@@ -11,8 +11,7 @@ export default function Interest(props) {
   return (
     <div
       onClick={() => dispath({ type: "ADD_FAVORITE", payload: props.id })}
-      className="Interest"
-    >
+      className="Interest">
       {isAddFavorite.isInterest ? (
         <BsHeartFill className="heart_Fill" />
       ) : (

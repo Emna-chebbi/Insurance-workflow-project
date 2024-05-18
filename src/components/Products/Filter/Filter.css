@@ -4,6 +4,7 @@
     margin: 0 auto;
     padding: 70px 16px 5px;
     margin-top: 16px;
+    direction: ltr;
 }
 
 .filter_btnBox {
