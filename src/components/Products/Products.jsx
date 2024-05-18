@@ -27,14 +27,13 @@ export default function Products() {
           <div className="not_products">
             <img
               className="products_empty_img"
-              src="images/bare-tree.jpg"
+              src="images/bare-tree.png"
               alt=""
             />
             <span className="products_empty_title">
             Sorry, no products match your search
             </span>
-            <span className="products_empty_guide">
-            Search  
+            <span className="products_empty_guide">  
             </span>
           </div>
         )}

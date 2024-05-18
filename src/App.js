@@ -9,6 +9,7 @@ import Products from './components/Products/Products';
 import Insurance from './components/Insurance/Insurance';
 import Claims from './components/Claims/Claims';
 import Contact from './components/Contact/Contact';
+import Chatbot from './components/Chatbot/Chatbot';
 
 
 function App() {
@@ -20,12 +21,15 @@ function App() {
     { path: '/insurance', element: <Insurance /> },
     { path: '/claims', element: <Claims /> },
     { path: '/contact', element: <Contact /> },
+    { path: '/chatbot', element: <Chatbot /> },
     { path: '*', element: <Navigate to={'/'} /> },
+
   ])
   return (
     <ContextProvider>
       <ContextFilter>
         <Header />
+        <Chatbot />
         {router}
       </ContextFilter>
     </ContextProvider>

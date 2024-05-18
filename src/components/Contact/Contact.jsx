@@ -23,6 +23,17 @@ const ContactPage = () => {
             Our innovative approach to insurance services ensures that our clients experience unparalleled convenience and efficiency. <br />
             Trust AssureTech to deliver high-quality services catered to your needs. 
             </p>
+            <div className="social-media-icons">
+              <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="/images/instagram.png" alt="Instagram" className="social-icon" />
+              </a>
+              <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                <img src="/images/facebook.png" alt="Facebook" className="social-icon" />
+              </a>
+              <a href="https://www.x.com" target="_blank" rel="noopener noreferrer">
+                <img src="/images/x.png" alt="X" className="social-icon" />
+              </a>
+            </div>
           </section>
         </div>
         <div className="contact-page-right">

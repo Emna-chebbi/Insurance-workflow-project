@@ -181,7 +181,7 @@ export default function Basket() {
     <>
       <div className="favorite_container_linkBar">
         <div className="favorite_linkBar">
-          <span>Shopping cart</span>
+          <span>🛒</span>
           <Link className="favorite_backLink" to={"/"}>
             <HiArrowRight />
             Products page
@@ -253,7 +253,7 @@ export default function Basket() {
             src="images/empty-cart.png"
             alt=""
           />
-          <span className="favorite_empty_title"> Cart is empty </span>
+          <span className="favorite_empty_title"> </span>
         </div>
       )}
     </>

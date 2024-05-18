@@ -21,7 +21,6 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer_links">
-          <Link to={"/"}>My Profile</Link>
           <Link to={"/"}>Sales Shop</Link>
           <Link to={"/Insurance"}>Insurances</Link>
           <Link to={"/Claims"}>Claims</Link>

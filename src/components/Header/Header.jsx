@@ -28,7 +28,7 @@ function Header() {
     <header className="header" dir="ltr">
       <nav className="nav">
         <Link to={"/"} className="logo">
-          My Profile
+        <img src="images/user.png" alt=""/>
         </Link>
         <Link to={"/"} className="logo">
           Sales shop 

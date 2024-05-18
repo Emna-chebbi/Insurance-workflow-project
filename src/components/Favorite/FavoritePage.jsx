@@ -13,7 +13,7 @@ export default function FavoritePage() {
     <>
       <div className="favorite_container_linkBar">
         <div className="favorite_linkBar">
-          <span> Favorites </span>
+          <span> ❤️ </span>
           <Link className="favorite_backLink" to={"/"}>
             <HiArrowRight />
              Products page
