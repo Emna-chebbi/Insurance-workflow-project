@@ -88,12 +88,8 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
             <textarea id="termsOfContract" value={termsOfContract} onChange={(e) => setTermsOfContract(e.target.value)}  required/>
           </div>
           <div className="form__row">
-            <label htmlFor="firstName">First Name</label>
+            <label htmlFor="firstName"> Name</label>
             <input id="firstName" type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
-          </div>
-          <div className="form__row">
-            <label htmlFor="lastName">Last Name</label>
-            <input id="lastName" type="text" value={lastName} onChange={(e) => setLastName(e.target.value)} required/>
           </div>
           <div className="form__row">
             <label htmlFor="email">Email</label>

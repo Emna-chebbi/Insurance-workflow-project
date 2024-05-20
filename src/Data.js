@@ -62,15 +62,6 @@ let allProducts = [{
     category: 'MyTek'
 },
 {
-    id: 9,
-    title: 'Pc Portable ASUS X515E',
-    image: 'images/9.png',
-    price: 1985000,
-    count: 1,
-    isInterest: false,
-    category: 'Tunisianet'
-},
-{
     id: 10,
     title: 'Automatic Washing Machine',
     image: 'images/10.png',
@@ -89,15 +80,6 @@ let allProducts = [{
     category: 'Graid'
 },
 {
-    id: 12,
-    title: 'MacBook Air M1',
-    image: 'images/12.png',
-    price: 3799000,
-    count: 1,
-    isInterest: false,
-    category: 'Tunisianet'
-},
-{
     id: 13,
     title: 'LG Silver Dishwasher',
     image: 'images/13.jpg',
@@ -105,24 +87,6 @@ let allProducts = [{
     count: 1,
     isInterest: false,
     category: 'MyTek'
-},
-{
-    id: 14,
-    title: 'Condor Air conditioner',
-    image: 'images/14.png',
-    price: 1599000,
-    count: 1,
-    isInterest: false,
-    category: 'MyTek'
-},
-{
-    id: 15,
-    title: 'Toshiba Microwave Oven',
-    image: 'images/15.png',
-    price: 405000,
-    count: 1,
-    isInterest: false,
-    category: 'Tunisianet'
 },
 ]
 

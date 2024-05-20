@@ -37,8 +37,6 @@ export default function Details() {
           </div>
           <div className="card_information">
             <ul>
-              <li>Brand : </li>
-              <li>Phone Model : </li>
               <li>Serial Number : </li>
             </ul>
           </div>
