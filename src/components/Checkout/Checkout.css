@@ -1,0 +1,94 @@
+.checkout_container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #bbdfab;
+    border-radius: 10px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    direction: ltr;
+  }
+  
+  .customer_info_form {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 50px;
+    background-color: #fbfbfb;
+    border-radius: 10px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .customer_info_form .form-row {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .customer_info_form .form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    direction: ltr;
+  }
+  
+  .customer_info_form label {
+    width: 100px;
+    margin-bottom: 5px;
+    margin-right: 20px;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .customer_info_form input,
+  .customer_info_form select {
+    flex: 1;
+    width: calc(100% - 120px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+  
+  .customer_info_form select {
+    appearance: none;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='%23333' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 30px;
+  }
+  
+  .customer_info_form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #1f77b5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+  }
+  
+  .customer_info_form button:hover {
+    background-color: #FFBFBF;
+  }
+  
+  .checkout_container h1 {
+    font-size: 24px;
+    color: #fd6b6b;
+    margin-bottom: 20px;
+  }
+  
+  .checkout_container p {
+    font-size: 16px;
+    color: #353535;
+    margin-bottom: 10px;
+  }
+  

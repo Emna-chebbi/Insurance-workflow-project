@@ -13,6 +13,7 @@ import Contact from './components/Contact/Contact';
 import Chatbot from './components/Chatbot/Chatbot';
 import SignUp from './components/SignUp/SignUp';
 import SignIn from './components/SignIn/SignIn';
+import Checkout from './components/Checkout/Checkout';
 
 function App() {
   const location = useLocation();
@@ -29,6 +30,7 @@ function App() {
     { path: '/contact', element: <Contact /> },
     { path: '/signup', element: <SignUp /> },
     { path: '/signin', element: <SignIn /> },
+    { path: '/checkout', element: <Checkout /> },
     { path: '*', element: <Navigate to={'/Products'} /> },
   ]);
 
