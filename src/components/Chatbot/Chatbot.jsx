@@ -23,7 +23,7 @@ const Chatbot = () => {
 
         if (userInput.includes('insurance contract') && userInput.includes('better')) {
           botResponse = "It depends on your needs, however Premium Plan offers more coverage and includes all sorts of damages that might happen to your phone.";
-        } else if (userInput.includes('contract') && userInput.includes('over')) {
+        } else if (userInput.includes('contract') && userInput.includes('end')) {
           botResponse = "We will send you an email to remind you that your contract has ended and if you would like to renew it.";
         } else if (userInput.includes('discount codes')) {
           botResponse = "We post them on our social media from time to time so be sure to follow us!";
