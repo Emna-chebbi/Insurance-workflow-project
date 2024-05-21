@@ -11,7 +11,6 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
   const [endDate, setEndDate] = useState('');
   const [termsOfContract, setTermsOfContract] = useState('');
   const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
   const [email, setEmail] = useState('');
 
   const handleSubmit = (event) => {
@@ -26,7 +25,6 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
     setEndDate('');
     setTermsOfContract('');
     setFirstName('');
-    setLastName('');
     setEmail('');
     alert("Thank you for your purchase");
  

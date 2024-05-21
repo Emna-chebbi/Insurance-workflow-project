@@ -1,0 +1,95 @@
+.signin-container {
+  width: 350px;
+  height: 350px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 100px;
+  margin-right: 450px;
+  padding: 20px 30px;
+  direction: ltr;
+}
+
+.signin-title {
+  text-align: center;
+  font-family: "Lucida Sans", sans-serif;
+  margin: 10px 0 30px 0;
+  font-size: 28px;
+  font-weight: 800;
+  color: #DD761C;
+}
+
+.signin-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 15px;
+}
+
+.signin-input {
+  border-radius: 20px;
+  border: 1px solid #c0c0c0;
+  outline: 0 !important;
+  box-sizing: border-box;
+  padding: 12px 15px;
+}
+
+.signin-forgot-password {
+  text-decoration: underline;
+  margin: 0;
+  text-align: end;
+  color: #747474;
+}
+
+.signin-forgot-password-label {
+  cursor: pointer;
+  font-size: 9px;
+  font-weight: 700;
+}
+
+.signin-forgot-password-label:hover {
+  color: #000;
+}
+
+.signin-button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: 0 !important;
+  outline: 0 !important;
+  background: #6DC5D1;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.signin-button:active {
+  box-shadow: none;
+}
+
+.signin-signup-label {
+  margin: 0;
+  font-size: 10px;
+  color: #747474;
+}
+
+.signin-signup-link {
+  cursor: pointer;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #747474;
+}
+
+.signin-signup-link:hover {
+  color: #000;
+}
+
+.signin-buttons-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 20px;
+}
+

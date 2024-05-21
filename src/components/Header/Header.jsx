@@ -12,6 +12,7 @@ function Header() {
   const location = useLocation();
   const { pathname } = location;
 
+  const isAuthPage = pathname === '/signup' || pathname === '/signin';
 
   const didMount = useRef(false);
   useEffect(() => {
@@ -24,13 +25,17 @@ function Header() {
     }
   }, [dispath, state.favorites]);
 
+  if (isAuthPage) {
+    return null;
+  }
+
   return (
     <header className="header" dir="ltr">
       <nav className="nav">
         <Link to={"/"} className="logo">
-        <img src="images/user.png" alt=""/>
+          <img src="images/user.png" alt=""/>
         </Link>
-        <Link to={"/"} className="logo">
+        <Link to={"/Products"} className="logo">
           Sales shop 
         </Link>
         <Link to={"/Insurance"} className="logo">
@@ -42,8 +47,7 @@ function Header() {
         <Link to={"/Contact"} className="logo">
           Contact
         </Link>
-        
-    
+
         <div className="search_header">{pathname === "/" && <SearchBar />}</div>
         <div className="icon_Sopping_box">
           <Link to={"/basket"} className="shoppe_icon_box">

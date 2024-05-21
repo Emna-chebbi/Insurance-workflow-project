@@ -25,6 +25,7 @@ export default function Footer() {
           <Link to={"/Insurance"}>Insurances</Link>
           <Link to={"/Claims"}>Claims</Link>
           <Link to={"/Contact"}>Contact</Link>
+          <Link to={"/SignUp"}>SignUp</Link>
         </div>
       </div>
       <span onClick={handleToTop} className="go_top">

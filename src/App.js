@@ -1,4 +1,5 @@
-import { Navigate, useRoutes } from 'react-router-dom';
+import React from 'react';
+import { Navigate, useRoutes, useLocation } from 'react-router-dom';
 import Basket from './components/Basket/Basket';
 import ContextFilter from './components/Context/ContextFilter';
 import ContextProvider from './components/Context/ContextProvider';
@@ -10,26 +11,32 @@ import Insurance from './components/Insurance/Insurance';
 import Claims from './components/Claims/Claims';
 import Contact from './components/Contact/Contact';
 import Chatbot from './components/Chatbot/Chatbot';
-
+import SignUp from './components/SignUp/SignUp';
+import SignIn from './components/SignIn/SignIn';
 
 function App() {
-  let router = useRoutes([
-    { path: '/', element: <Products /> },
+  const location = useLocation();
+  const isAuthPage = location.pathname === '/signup' || location.pathname === '/signin';
+
+  const router = useRoutes([
+    { path: '/', element: <Navigate to="/signup" /> }, 
+    { path: '/products', element: <Products /> }, 
     { path: '/:id', element: <Details /> },
     { path: '/favorite', element: <FavoritePage /> },
     { path: '/basket', element: <Basket /> },
     { path: '/insurance', element: <Insurance /> },
     { path: '/claims', element: <Claims /> },
     { path: '/contact', element: <Contact /> },
-    { path: '/chatbot', element: <Chatbot /> },
-    { path: '*', element: <Navigate to={'/'} /> },
+    { path: '/signup', element: <SignUp /> },
+    { path: '/signin', element: <SignIn /> },
+    { path: '*', element: <Navigate to="/signup" /> }, 
+  ]);
 
-  ])
   return (
     <ContextProvider>
       <ContextFilter>
-        <Header />
-        <Chatbot />
+        {!isAuthPage && <Header />}
+        {!isAuthPage && <Chatbot />}
         {router}
       </ContextFilter>
     </ContextProvider>

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import './Chatbot.css';
 
 const Chatbot = () => {
@@ -7,6 +8,9 @@ const Chatbot = () => {
     { text: 'Hello! How can I help you today?', sender: 'bot' }
   ]);
   const [input, setInput] = useState('');
+
+  const location = useLocation();
+  const isAuthPage = location.pathname === '/signup' || location.pathname === '/signin';
 
   const handleSend = () => {
     if (input.trim() !== '') {
@@ -41,6 +45,10 @@ const Chatbot = () => {
       }, 1000);
     }
   };
+
+  if (isAuthPage) {
+    return null;
+  }
 
   return (
     <div className={`chatbot-container ${isOpen ? 'open' : 'closed'}`} dir='ltr'>

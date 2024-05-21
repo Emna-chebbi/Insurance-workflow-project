@@ -10,7 +10,7 @@ body {
   max-width: 550px;
   background: #fff5f5;
   padding: 50px 100px;
-  margin: 150px auto 100px auto; /* Centering the form horizontally */
+  margin: 150px auto 100px auto; 
   border-radius: 20px;
 }
 
