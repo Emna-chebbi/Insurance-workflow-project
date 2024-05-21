@@ -21,11 +21,10 @@ export default function Footer() {
           </div>
         </div>
         <div className="footer_links">
-          <Link to={"/"}>Sales Shop</Link>
+          <Link to={"/Products"}>Sales Shop</Link>
           <Link to={"/Insurance"}>Insurances</Link>
           <Link to={"/Claims"}>Claims</Link>
           <Link to={"/Contact"}>Contact</Link>
-          <Link to={"/SignUp"}>SignUp</Link>
         </div>
       </div>
       <span onClick={handleToTop} className="go_top">

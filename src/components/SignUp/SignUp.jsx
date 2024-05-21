@@ -7,8 +7,7 @@ const SignUp = () => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // You can add the sign-up logic here (e.g., API call)
-    // After successful sign-up, navigate to the sign-in page
+    // API call
     navigate('/signin');
   };
 

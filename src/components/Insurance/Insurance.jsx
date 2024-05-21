@@ -67,7 +67,7 @@ const InsurancePlan = ({ plan, standardFeatures, premiumFeatures }) => {
           <div className="form__row">
             <label htmlFor="contract">Contract</label>
             <select id="contract" value={contract} onChange={(e) => setContract(e.target.value)}>
-              <option value="">Select contract type</option>
+              <option value="">Select contract model</option>
               <option value="premium">Premium</option>
               <option value="standard">Standard</option>
             </select>

@@ -29,7 +29,7 @@ function App() {
     { path: '/contact', element: <Contact /> },
     { path: '/signup', element: <SignUp /> },
     { path: '/signin', element: <SignIn /> },
-    { path: '*', element: <Navigate to="/signup" /> }, 
+    { path: '*', element: <Navigate to={'/Products'} /> },
   ]);
 
   return (
