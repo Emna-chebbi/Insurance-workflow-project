@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext } from "react";
 import "./Basket.css";
 import { Link, useNavigate } from "react-router-dom";
 import { HiArrowRight } from "react-icons/hi";
@@ -14,6 +14,9 @@ export default function Basket() {
   const navigate = useNavigate();
 
   const handleConfirmPurchase = () => {
+    // Clear the basket
+    dispath({ type: "EMPTY_BASKET" });
+    // Navigate to the checkout page
     navigate('/checkout');
   };
 
